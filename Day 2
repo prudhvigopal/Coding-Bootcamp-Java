@@ -1,0 +1,54 @@
+//Code to perform operations with the Typecasting and the operators
+import java.util.*;
+public class Day2 {
+    public static void main(String[] args) {
+        
+        float a = 12.24f;
+        //forcing to get ignore the decimal values
+        //for that syntax is 
+        System.out.println("TypeCasting Example");
+        int b;
+        b = (int)a;
+        System.out.println(b);
+        //Arthamattic Operators
+        Scanner sc = new Scanner(System.in);
+        int c = sc.nextInt();
+        int d = sc.nextInt();
+        System.out.println("Arthamatic Operaters");
+        System.out.println(c+d);
+        System.out.println(c-d);
+        System.out.println(c*d);
+        System.out.println(c/d);
+        System.out.println(c%d);
+        //Urinary Operator
+        System.out.println("Urinary Operators");
+        System.out.print("Pre Increment ");
+        System.out.println(++c);
+        System.out.print("Post Increment ");
+        System.out.println(c++);
+        System.out.print("Pre Decrement ");
+        System.out.println(--d);
+        System.out.print("Post Decrement ");
+        System.out.println(d--);
+        //Assignment Operators 
+        System.out.println("Assignment Operators");
+        c+=d;
+        System.out.println(c);
+        //Realational Operators
+        System.out.println("Relational Operators");
+        System.out.println(a>b);
+        //Logical Operators
+        System.out.println("Logical Operators");
+        System.out.println(c>b && c==b);
+        //Terinary Operators
+        System.out.println("Terinary Operators");
+        int max = (c>d)?c:d;
+        System.out.println(max);
+        //Bitwise Operators 
+        System.out.println("Bitwise Operators");
+        System.out.println(c&d);
+        System.out.println(c|d);
+
+    }
+    
+}
