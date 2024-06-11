@@ -1,0 +1,64 @@
+//2D Array Matrix Printing
+import java.util.*;
+public class Day7Arrays2D {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int array[][] = new int[a][b];
+        for(int i=0;i<a;i++){
+            for (int j=0;j<b;j++){
+                array[i][j] = sc.nextInt();
+            }
+        }
+            System.out.println("wait");
+        for(int c=0;c<a;c++){
+            for (int j=0;j<b;j++){
+                System.out.print(array[c][j]+" ");
+            }
+            System.out.println();
+
+        }
+    }
+    
+}
+
+
+//2D Array Example two print Sum of two arrays
+import java.util.*;
+public class Day7Arrays2DExample {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the array row size: ");
+        int a = sc.nextInt();
+        System.out.println("Enter the array coloumn size: ");
+        int b = sc.nextInt();
+        int array1[][] = new int[a][b];
+        int array2[][] = new int[a][b];
+        int sumarray[][] = new int[a][b];
+        System.out.println("Enter the elements in array1: ");
+        for (int i=0;i<a;i++){
+            for (int j=0;j<b;j++){
+                array1[i][j] = sc.nextInt();
+            }
+        }
+        System.out.println("Enter the elements in array2: ");
+        for (int i=0;i<a;i++){
+            for(int j=0;j<b;j++){
+                array2[i][j] = sc.nextInt();
+            }
+        }
+        for (int i=0;i<a;i++){
+            for (int j=0;j<b;j++){
+                sumarray[i][j] = array1[i][j] + array2[i][j];
+            }
+        }
+        System.out.println("Sum of two arrays is: ");
+        for (int i=0;i<a;i++){
+            for (int j=0;j<b;j++){
+                System.out.print(sumarray[i][j]+" ");
+            }
+            System.out.println();
+        }
+    }
+}
