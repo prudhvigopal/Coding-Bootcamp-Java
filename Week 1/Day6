@@ -1,0 +1,39 @@
+//Sample Arrays
+public class Day6Arrays1D {
+    public static void main(String[] args) {
+        int[] nivi = new int[5];
+        nivi[0] = 1;
+        nivi[1] = 2;
+        nivi[2] = 3;
+        nivi[3] = 4;
+        nivi[4] = 5;
+        System.out.println(nivi[0]);
+        System.out.println(nivi[1]);
+        System.out.println(nivi[2]);
+        System.out.println(nivi[3]);
+        System.out.println(nivi[4]);
+    }
+    
+}
+
+
+//Multiple Array Inputs
+import java.util.*;
+public class Day6Inputs1D {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        System.out.println("Enter Array size: ");
+        int a = s.nextInt();
+        int array[] = new int[a];
+        System.out.println("Enter the input elements: ");
+        for(int i=0;i<a;i++){
+            array[i]=s.nextInt();
+        }
+        System.out.println("The Stored elements in a array are");
+        for(int i=0;i<a;i++){
+            System.out.println(array[i]);
+        }
+    }
+    
+}
+
