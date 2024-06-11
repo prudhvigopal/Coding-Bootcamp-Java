@@ -1,0 +1,87 @@
+//Methods Usage
+import java.util.*;
+public class Day5Methods {
+    public static void main(String[] args) {
+        Day5Methods m = new Day5Methods();
+        m.SayHello();
+        Scanner sc = new Scanner(System.in);
+        int x = sc.nextInt();
+        int y = sc.nextInt();
+        m.AddNumber(x,y);
+        int output = m.WithReturntype(x,y);
+        
+        System.out.println(output);
+    }
+    void SayHello(){
+        System.out.println("HEllO");
+    }
+    void AddNumber(int a, int b){
+        System.out.println(a+b);
+    }
+    int WithReturntype(int c, int d){
+        int sum;
+        sum = c + d;
+        return sum;
+    }
+}
+
+
+//Methods Program Example
+import java.util.*;
+
+public class Day5MethodsExample {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        Day5MethodsExample m = new Day5MethodsExample();
+        for (int i = 2; i <= n; i++) {
+            int k = m.Day5MethodsExample(i);
+            if (k == 1) {
+                System.out.print(i);
+                System.out.print(" ");
+            }
+        }
+    }
+
+    int Day5MethodsExample(int n) {
+        int a;
+        int count = 0;
+        for (int i = 2; i <= n; i++) {
+            if (n % i == 0) {
+                count++;
+            }
+        }
+        if (count == 1) {
+            return 1;
+        } else {
+            return 0;
+        }
+    }
+}
+
+//Break and Continue Usage
+public class Day5BreakContinue {
+    public static void main(String[] args) {
+        int i=0;
+        int a=0;
+        //Example for the break keyword;
+        System.out.println("Example for the Break Keyword");
+        while(a<5){
+            if(a==2){
+                break;
+            }
+            System.out.println(a);
+            a++;
+        }
+        //Example for the Continue Keyword;
+        System.out.println("Example for the Continue Keyword");
+        while(i<5){
+            if(i==2){
+                i++;
+                continue;
+            }
+            System.out.println(i);
+            i++;
+        }
+    }
+}
