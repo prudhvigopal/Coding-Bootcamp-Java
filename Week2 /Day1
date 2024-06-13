@@ -1,0 +1,24 @@
+public class Day8Strings {
+    public static void main(String[] args) {
+        //We have mainly two types in String creations
+        //Option1: String literal
+        String s = "CODING BOOTCAMP";
+        String sdup = "CODING BOOTCAMP";
+        System.out.println(s);
+        //Option2: New Objects
+        String s1 = new String("CODING BOOTCAMP");
+        String s1dup = new String("CODING BOOTCAMP");
+        System.out.println(s1);
+        System.out.println(s1==s);
+        System.out.println(s == sdup);  
+        System.out.println(s1dup == s1);
+        //but option2 is not preferable 
+        //In option2 we have two parts:
+        //Option2: a. String Buffer
+        StringBuffer sb = new StringBuffer("Prudhvi Gopal");
+        System.out.println(sb);
+        StringBuilder sb1 = new StringBuilder("Prudhvi Gopal");
+        System.out.println(sb1);
+
+    }
+}
